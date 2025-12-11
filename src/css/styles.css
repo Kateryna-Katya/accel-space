@@ -214,7 +214,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: #fff; font-weight: 700
 }
 
 .pages h1 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   margin-bottom: 40px;
   background: linear-gradient(135deg, #fff, var(--text-muted));
   -webkit-background-clip: text;
