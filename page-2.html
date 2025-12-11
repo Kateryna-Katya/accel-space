@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/accel-space/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/accel-space/assets/styles-D-TppZqr.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="#" class="logo">
+      Accel<span class="logo__highlight">-Space</span>
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link active">Главная</a></li>
+        <li class="nav__item"><a href="#solutions" class="nav__link">AI-Решения</a></li>
+        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--small">Связаться</a>
+      <button class="burger-menu" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -39,19 +44,61 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="#" class="logo logo--footer">
+          Accel<span class="logo__highlight">-Space</span>
+        </a>
+        <p class="footer__desc">
+          Передовая цифровая инфраструктура для вашего бизнеса. Создаем ботов, которые работают на вас 24/7.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__links">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#solutions">AI-Решения</a></li>
+          <li><a href="#innovations">Инновации</a></li>
+          <li><a href="#blog">Блог</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Информация</h3>
+        <ul class="footer__links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Personal Data</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contacts">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+442079460123">+44 20 7946 0123</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:hello@accel-space.blog">hello@accel-space.blog</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>15 Westland Place, London, N1 7LP, UK</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Accel-Space. Все права защищены. Платформа уже доступна в Европе.</p>
+    </div>
   </div>
 </footer>
-
   </body>
 </html>
