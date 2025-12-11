@@ -1,61 +1,219 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accel-Space | Разработка AI-ботов и ассистентов</title>
-  <meta name="description"
-    content="Решения, которые меняют правила игры. Разработка ботов от простых чатиков до AI-ассистентов.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accel-Space | Разработка AI-ботов и ассистентов</title>
+    <meta name="description" content="AI-инструменты для реальных задач. Разработка ботов от простых чатиков до AI-ассистентов.">
 
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0b14'/%3E%3Ccircle cx='50' cy='50' r='30' stroke='%233b82f6' stroke-width='6' fill='none'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%238b5cf6'/%3E%3Cpath d='M50 10 L50 30 M50 70 L50 90 M90 50 L70 50 M30 50 L10 50' stroke='%233b82f6' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" type="image/svg+xml">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;500;700&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
-    <script type="module" crossorigin src="/accel-space/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/accel-space/assets/styles-D-TppZqr.css">
-  </head>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script type="module" crossorigin src="/accel-space/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/accel-space/assets/styles-DYnh9n_d.css">
+</head>
+
   <body>
     <header class="header">
   <div class="container header__container">
-    <a href="#" class="logo">
-      Accel<span class="logo__highlight">-Space</span>
-    </a>
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link active">Главная</a></li>
-        <li class="nav__item"><a href="#solutions" class="nav__link">AI-Решения</a></li>
-        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
-        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
-      </ul>
-    </nav>
-
-    <div class="header__actions">
-      <a href="#contact" class="btn btn--small">Связаться</a>
-      <button class="burger-menu" aria-label="Открыть меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+      <a href="#" class="logo">
+          Accel<span class="logo__highlight">-Space</span>
+      </a>
+      <nav class="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#hero" class="nav__link active">Главная</a></li>
+              <li class="nav__item"><a href="#solutions" class="nav__link">Решения</a></li>
+              <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
+          </ul>
+      </nav>
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--small">Связаться</a>
+          <button class="burger-menu" aria-label="Меню">
+              <span></span><span></span><span></span>
+          </button>
+      </div>
   </div>
 </header>
 
     <main class="main-content">
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero">
+  <div id="canvas-container"></div> <div class="container hero__content">
+      <span class="badge">Платформа уже доступна в Европе</span>
+      <h1 class="hero__title">
+          AI-инструменты для <br>
+          <span class="text-gradient">реальных задач</span>
+      </h1>
+      <p class="hero__subtitle">
+          Откройте новые возможности. Мы создаем технологию нового поколения: от умных чат-ботов до комплексных AI-ассистентов.
+      </p>
+      <div class="hero__btns">
+          <a href="#contact" class="btn btn--glow">Начать сейчас</a>
+          <a href="#solutions" class="btn btn--outline">Узнать детали</a>
+      </div>
+  </div>
+</section>
+
+<section id="solutions" class="section">
+  <div class="container">
+      <div class="section__header">
+          <h2 class="section__title">Решения, которые меняют <span class="text-highlight">правила игры</span></h2>
+          <p class="section__desc">Пошаговый путь, понятный каждому. Выберите свой уровень автоматизации.</p>
+      </div>
+
+      <div class="grid-3">
+          <div class="card">
+              <div class="card__icon"><i class="fa-solid fa-robot"></i></div>
+              <h3 class="card__title">Чат-боты</h3>
+              <p class="card__text">Быстрый и лёгкий старт. Автоматизация поддержки и продаж в Telegram, WhatsApp и на сайте.</p>
+          </div>
+          <div class="card">
+              <div class="card__icon"><i class="fa-solid fa-brain"></i></div>
+              <h3 class="card__title">AI-Ассистенты</h3>
+              <p class="card__text">Инновационная технология. Персональные помощники, обученные на ваших данных.</p>
+          </div>
+          <div class="card">
+              <div class="card__icon"><i class="fa-solid fa-network-wired"></i></div>
+              <h3 class="card__title">Интеграции</h3>
+              <p class="card__text">Передовая цифровая инфраструктура. Связка ботов с CRM, 1C и внешними API.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="innovations" class="section section--dark">
+  <div class="container">
+      <div class="innovation-layout">
+          <div class="innovation__text">
+              <h2 class="section__title">Воплотите мечты <br>в реальность</h2>
+              <ul class="check-list">
+                  <li><i class="fa-solid fa-check"></i> Методологии, доказавшие эффективность</li>
+                  <li><i class="fa-solid fa-check"></i> Стратегия роста на базе инноваций</li>
+                  <li><i class="fa-solid fa-check"></i> Технологии, которые работают на вас</li>
+                  <li><i class="fa-solid fa-check"></i> Экспертная поддержка на всех этапах</li>
+              </ul>
+              <a href="#contact" class="btn mt-30">Оценить перспективы</a>
+          </div>
+          <div class="innovation__visual">
+              <div class="glowing-orb"></div>
+              <div class="glass-panel">
+                  <div class="stat-row">
+                      <span>Efficiency</span>
+                      <div class="progress-bar"><div class="fill" style="width: 94%"></div></div>
+                  </div>
+                  <div class="stat-row">
+                      <span>Automation</span>
+                      <div class="progress-bar"><div class="fill" style="width: 88%"></div></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="blog" class="section">
+  <div class="container">
+      <div class="section__header">
+          <h2 class="section__title">Блог и <span class="text-highlight">Практика</span></h2>
+          <p class="section__desc">Практики, применимые уже сегодня. Читайте о последних трендах.</p>
+      </div>
+
+      <div class="grid-3">
+          <article class="blog-card">
+              <div class="blog-card__img">
+                  <img src="img/placeholder.png" alt="AI Trends" style="background:#1a1d2d; width:100%; height:200px; object-fit:cover;">
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-card__date">10.12.2025</span>
+                  <h4>Как нейросети меняют рынок труда в Европе</h4>
+                  <a href="#" class="read-more">Читать далее &rarr;</a>
+              </div>
+          </article>
+          <article class="blog-card">
+              <div class="blog-card__img">
+                  <img src="img/placeholder.png" alt="Bot Dev" style="background:#1a1d2d; width:100%; height:200px; object-fit:cover;">
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-card__date">08.12.2025</span>
+                  <h4>Разработка бота за 2 часа: Миф или Реальность?</h4>
+                  <a href="#" class="read-more">Читать далее &rarr;</a>
+              </div>
+          </article>
+          <article class="blog-card">
+              <div class="blog-card__img">
+                  <img src="img/placeholder.png" alt="Integration" style="background:#1a1d2d; width:100%; height:200px; object-fit:cover;">
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-card__date">05.12.2025</span>
+                  <h4>Интеграция ChatGPT в бизнес-процессы</h4>
+                  <a href="#" class="read-more">Читать далее &rarr;</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section id="contact" class="section section--gradient">
+  <div class="container">
+      <div class="contact-wrapper">
+          <div class="contact-info">
+              <h2 class="section__title">Начать сейчас</h2>
+              <p>Запросить доступ или получить бесплатную консультацию по всем вопросам. Проверенный партнер для вашего роста.</p>
+              <div class="contact-methods">
+                  <div class="method">
+                      <i class="fa-solid fa-envelope"></i>
+                      <span>hello@accel-space.blog</span>
+                  </div>
+                  <div class="method">
+                      <i class="fa-solid fa-location-arrow"></i>
+                      <span>London, UK</span>
+                  </div>
+              </div>
+          </div>
+
+          <form class="contact-form" id="mainForm">
+              <div class="form-group">
+                  <input type="text" id="name" required placeholder=" ">
+                  <label for="name">Ваше имя</label>
+              </div>
+              <div class="form-group">
+                  <input type="email" id="email" required placeholder=" ">
+                  <label for="email">Email</label>
+              </div>
+              <div class="form-group">
+                  <input type="tel" id="phone" required placeholder=" ">
+                  <label for="phone">Телефон (только цифры)</label>
+              </div>
+
+              <div class="captcha-group">
+                  <span id="captcha-question">2 + 3 = ?</span>
+                  <input type="number" id="captcha-answer" required placeholder="Ответ">
+              </div>
+
+              <div class="checkbox-group">
+                  <input type="checkbox" id="consent" required>
+                  <label for="consent">Я согласен с <a href="personal-data-policy.html">политикой обработки данных</a></label>
+              </div>
+
+              <button type="submit" class="btn btn--full">Отправить заявку</button>
+              <div class="form-message" id="formMessage"></div>
+          </form>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
@@ -116,6 +274,10 @@
     </div>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookiePopup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      <button id="acceptCookies" class="btn btn--small">Принять</button>
+  </div>
 
   </body>
 </html>
